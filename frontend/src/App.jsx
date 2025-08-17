@@ -26,7 +26,7 @@ export default function Home() {
     e.preventDefault();
 
     try {
-      const res = await fetch('http://localhost:5000/api/send-inquiry', {
+      const res = await fetch('https://vedant-exports-2rqe.onrender.com/api/send-inquiry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(inquiry)

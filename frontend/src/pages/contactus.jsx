@@ -18,7 +18,7 @@ export default function ContactPage() {
     const handleSubmit = async (e) => {
       e.preventDefault();
       try {
-        const res = await fetch("http://localhost:5000/api/contact", {
+        const res = await fetch("https://vedant-exports-2rqe.onrender.com/api/contact", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
