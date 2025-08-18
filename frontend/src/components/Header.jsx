@@ -61,7 +61,7 @@ export default function Header() {
         </a>
 
         {/* Navigation */}
-        <nav className="flex items-center gap-10">
+        <nav className="flex items-center gap-8">
           <div className="hidden md:flex items-center gap-8 text-black font-[700]">
             <a
               href="/"
@@ -98,15 +98,9 @@ export default function Header() {
           {/* Google Translate Dropdown */}
           <div
             id="google_translate_wrapper"
-            className="flex items-center gap-2 whitespace-nowrap"
+            className="flex items-center gap-1 whitespace-nowrap"
             aria-label="Select Language"
           >
-            <label
-              htmlFor="google_translate_element"
-              className="text-sm text-slate-600 hidden md:inline-block font-[700]"
-            >
-              Select Language:
-            </label>
             <div
               id="google_translate_element"
               className="transform scale-90 origin-top-right flex items-center"
