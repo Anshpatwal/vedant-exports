@@ -371,10 +371,20 @@
 
 // lib.jsx
 export const garments = [
-  { id: 1, name: "Shirt", description: "Cotton shirt", image: "/images/shirt.jpg" },
-  { id: 2, name: "Kurta", description: "Traditional kurta", image: "/images/kurta.jpg" },
-];
+  {
+    id: "womens-dress-001",
+    name: "Elegant Floral Dress",
+    images: [
+      "/garments.jpg",
+      "/2.jpg",
+      "/3.jpg",
+      '/4.jpg',
+      '/5.jpg'
+    ],
+    description: "This elegant women's floral dress is crafted from premium breathable fabric, designed for both comfort and style. Featuring a flattering silhouette, lightweight texture, and timeless floral patterns, it is perfect for both casual outings and special occasions. The material ensures durability and easy maintenance, making it an ideal addition to modern wardrobes."
+  },
 
+]
 export const fabrics = [
   { id: 1, name: "Polyester", description: "Durable polyester fabric", image: "/images/polyester.jpg" },
   { id: 2, name: "Silk", description: "Premium silk fabric", image: "/images/silk.jpg" },
@@ -387,29 +397,30 @@ export const fabrics = [
 
 
 export const certificates = [
-    {
-        id: 'msme-certificate',
-        title: 'MSME Registration Certificate',
-        issuer: 'Ministry of Micro, Small and Medium Enterprises, Government of India',
-        date: '12-06-2025',
-        image: '/udyam.png',
-        description: 'Officially recognized as a registered Micro, Small or Medium Enterprise under the MSME Act, enabling eligibility for government schemes, subsidies, and export benefits.'
-    }
-    ,
-    {
-        id: 'fda-approval',
-        title: 'FDA Export Registration',
-        issuer: 'U.S. Food and Drug Administration',
-        date: '2024-02-20',
-        image: 'https://images.unsplash.com/photo-1573164713347-df9da5e55f96',
-        description: 'Authorized to export food-grade commodities to the United States following FDA guidelines.'
-    },
-    {
-        id: 'fair-trade',
-        title: 'Fair Trade Certified',
-        issuer: 'Fair Trade International',
-        date: '2023-08-10',
-        image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d',
-        description: 'Ensuring ethical sourcing and fair labor practices in agricultural exports.'
-    }
+  {
+    id: 'msme-certificate',
+    title: 'MSME Registration Certificate',
+    issuer: 'Ministry of Micro, Small and Medium Enterprises, Government of India',
+    date: '12-06-2025',
+    image: '/udyam.png',
+    description: 'Officially recognized as a registered Micro, Small or Medium Enterprise under the MSME Act, enabling eligibility for government schemes, subsidies, and export benefits.'
+  }
+  ,
+  {
+    id: 'gst-registration',
+    title: 'GST Registration Certificate',
+    issuer: 'Government of India',
+    date: '23-07-2025',
+    image: '/gst-certificate.jpg',
+    description: 'Vedant Exports is registered under Goods and Services Tax (GST) in India, enabling compliance for domestic and international trade.'
+  },
+
+  {
+    id: 'fair-trade',
+    title: 'Fair Trade Certified',
+    issuer: 'Fair Trade International',
+    date: '2023-08-10',
+    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d',
+    description: 'Ensuring ethical sourcing and fair labor practices in agricultural exports.'
+  }
 ];

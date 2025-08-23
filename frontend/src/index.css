@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+/* slick carousel styles */
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
 #google_translate_element select.goog-te-combo {
   appearance: none !important;
   -webkit-appearance: none !important;

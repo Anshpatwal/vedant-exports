@@ -7,6 +7,9 @@ import ProductsPage from "./pages/product.jsx";
 import CertificatesPage from "./pages/certificates.jsx";
 import ContactPage from "./pages/contactus.jsx";
 import AboutUs from "./pages/about.jsx";
+import CertificateDetailPage from "./pages/CertificateDetailPage";
+import ProductDetailPage from "./pages/ProductDetailPage";
+
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -14,8 +17,10 @@ createRoot(document.getElementById("root")).render(
       <Route path="/" element={<App />} />
       <Route path="/product" element={<ProductsPage />} />
       <Route path="/certificates" element={<CertificatesPage />} />
+       <Route path="/products/:id" element={<ProductDetailPage />} />
       <Route path="/contactus" element={<ContactPage />} />
       <Route path="/about" element={<AboutUs />} />
+      <Route path="/certificates/:id" element={<CertificateDetailPage />} />
     </Routes>
   </BrowserRouter>
 );

@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { garments, fabrics } from '../components/lib'; 
+import { garments, fabrics } from '../components/lib';
 import Header from '../components/Header';
+import { Link } from "react-router-dom";
 import Footer from '../components/Footer';
 
 const categories = ['Textiles'];
@@ -14,7 +15,7 @@ export default function ProductsPage() {
       Garments: garments,
       Fabrics: fabrics,
     },
-  
+
   };
 
   const subCategories = Object.keys(dataMap[activeCategory]);
@@ -44,11 +45,10 @@ export default function ProductsPage() {
                   setActiveCategory(cat);
                   setActiveSubCategory(Object.keys(dataMap[cat])[0]); // reset to first sub-category
                 }}
-                className={`px-5 py-2 rounded-full font-medium transition-all ${
-                  activeCategory === cat
+                className={`px-5 py-2 rounded-full font-medium transition-all ${activeCategory === cat
                     ? 'bg-teal-600 text-white'
                     : 'bg-white text-indigo-700 shadow'
-                }`}
+                  }`}
               >
                 {cat}
               </button>
@@ -63,11 +63,10 @@ export default function ProductsPage() {
               <button
                 key={sub}
                 onClick={() => setActiveSubCategory(sub)}
-                className={`px-4 py-2 rounded-lg font-medium transition-all ${
-                  activeSubCategory === sub
+                className={`px-4 py-2 rounded-lg font-medium transition-all ${activeSubCategory === sub
                     ? 'bg-indigo-600 text-white'
                     : 'bg-white text-indigo-700 shadow'
-                }`}
+                  }`}
               >
                 {sub}
               </button>
@@ -79,26 +78,23 @@ export default function ProductsPage() {
         <section className="px-6 pb-20">
           <div className="max-w-7xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-8">
             {dataMap[activeCategory][activeSubCategory].map((prod) => (
-              <a
+              <Link
                 key={prod.id}
-                href={`/products/${prod.id}`}
+                to={`/products/${prod.id}`}
                 className="block bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden"
               >
-                <img
-                  src={prod.image}
-                  alt={prod.name}
-                  className="object-cover h-56 w-full"
-                />
+                <img src={prod.images[0]} alt={prod.name} className="object-cover h-56 w-full" />
                 <div className="p-6">
                   <h2 className="text-xl font-bold text-slate-900 mb-2">{prod.name}</h2>
                   <p className="text-slate-600 mb-4">
                     {prod.description.length > 200
-                      ? prod.description.slice(0, 200) + '...'
+                      ? prod.description.slice(0, 200) + "..."
                       : prod.description}
                   </p>
                   <span className="text-teal-500 font-semibold">View Details →</span>
                 </div>
-              </a>
+              </Link>
+
             ))}
           </div>
         </section>

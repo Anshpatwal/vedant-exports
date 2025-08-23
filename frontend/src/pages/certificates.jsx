@@ -1,5 +1,6 @@
 import { certificates } from '../components/lib'; // adjust path if needed
 import Header from '../components/Header';
+import { Link } from "react-router-dom";
 import Footer from '../components/Footer';
 
 export default function CertificatesPage() {
@@ -34,12 +35,12 @@ export default function CertificatesPage() {
                   <p className="text-slate-600 text-sm">Issued by {cert.issuer}</p>
                   <p className="text-slate-600 text-sm">Date: {cert.date}</p>
                   <p className="text-slate-700 mt-4">{cert.description}</p>
-                  <a
-                    href={`/certificates/${cert.id}`}
+                 <Link
+                    to={`/certificates/${cert.id}`}
                     className="inline-block mt-4 text-teal-500 font-semibold hover:underline"
                   >
                     View Certificate Details →
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}
