@@ -176,7 +176,7 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold">Email Us</p>
-                  <p className="text-indigo-100">anshpatwal2703@gmail.com</p>
+                  <p className="text-indigo-100">vedantexportss@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
