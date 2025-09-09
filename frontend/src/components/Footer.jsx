@@ -51,31 +51,31 @@ export default function Footer() {
           <ul className="space-y-3">
             <li>
               <a
-                href="/products/textiles"
+                href="/products"
                 className="text-slate-400 hover:text-teal-400 transition-colors text-sm"
               >
-                Garments
+                Women Cord Set
               </a>
             </li>
             <li>
               <a
-                href="/products/textiles"
+                href="/products"
                 className="text-slate-400 hover:text-teal-400 transition-colors text-sm"
               >
-                Fabrics
+                Dresses
               </a>
             </li>
             <li>
               <a
-                href="/products/textiles"
+                href="/products"
                 className="text-slate-400 hover:text-teal-400 transition-colors text-sm"
               >
-                Laces
+                Women Tops
               </a>
             </li>
             <li>
               <a
-                href="/products/textiles"
+                href="/products"
                 className="text-slate-400 hover:text-teal-400 transition-colors text-sm"
               >
                 Embrodiery

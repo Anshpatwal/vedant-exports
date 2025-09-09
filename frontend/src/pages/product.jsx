@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { garments, fabrics } from '../components/lib';
+import { cordset, dress, tops } from '../components/lib';
 import Header from '../components/Header';
 import { Link } from "react-router-dom";
 import Footer from '../components/Footer';
@@ -8,17 +8,28 @@ const categories = ['Textiles'];
 
 export default function ProductsPage() {
   const [activeCategory, setActiveCategory] = useState('Textiles');
-  const [activeSubCategory, setActiveSubCategory] = useState('Garments'); // default sub-category
+  const [activeSubCategory, setActiveSubCategory] = useState('cordset');
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const itemsPerPage = 6; // change this to 9 or 12 as you like
 
   const dataMap = {
     Textiles: {
-      Garments: garments,
-      Fabrics: fabrics,
+      cordset: cordset,
+      dress: dress,
+      tops: tops,
     },
-
   };
 
   const subCategories = Object.keys(dataMap[activeCategory]);
+
+  // Get products of active sub-category
+  const products = dataMap[activeCategory][activeSubCategory];
+
+  // Pagination logic
+  const totalPages = Math.ceil(products.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const paginatedProducts = products.slice(startIndex, startIndex + itemsPerPage);
 
   return (
     <>
@@ -43,11 +54,12 @@ export default function ProductsPage() {
                 key={cat}
                 onClick={() => {
                   setActiveCategory(cat);
-                  setActiveSubCategory(Object.keys(dataMap[cat])[0]); // reset to first sub-category
+                  setActiveSubCategory(Object.keys(dataMap[cat])[0]);
+                  setCurrentPage(1); // reset page
                 }}
                 className={`px-5 py-2 rounded-full font-medium transition-all ${activeCategory === cat
-                    ? 'bg-teal-600 text-white'
-                    : 'bg-white text-indigo-700 shadow'
+                  ? 'bg-teal-600 text-white'
+                  : 'bg-white text-indigo-700 shadow'
                   }`}
               >
                 {cat}
@@ -62,10 +74,13 @@ export default function ProductsPage() {
             {subCategories.map((sub) => (
               <button
                 key={sub}
-                onClick={() => setActiveSubCategory(sub)}
+                onClick={() => {
+                  setActiveSubCategory(sub);
+                  setCurrentPage(1); // reset page
+                }}
                 className={`px-4 py-2 rounded-lg font-medium transition-all ${activeSubCategory === sub
-                    ? 'bg-indigo-600 text-white'
-                    : 'bg-white text-indigo-700 shadow'
+                  ? 'bg-indigo-600 text-white'
+                  : 'bg-white text-indigo-700 shadow'
                   }`}
               >
                 {sub}
@@ -75,27 +90,52 @@ export default function ProductsPage() {
         </nav>
 
         {/* Products Grid */}
-        <section className="px-6 pb-20">
+        <section className="px-6 pb-12">
           <div className="max-w-7xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {dataMap[activeCategory][activeSubCategory].map((prod) => (
+            {paginatedProducts.map((prod) => (
               <Link
                 key={prod.id}
                 to={`/products/${prod.id}`}
                 className="block bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden"
               >
-                <img src={prod.images[0]} alt={prod.name} className="object-cover h-56 w-full" />
+                <img src={prod.images[0]} alt={prod.name} className="object-cover h-150 w-full" />
                 <div className="p-6">
                   <h2 className="text-xl font-bold text-slate-900 mb-2">{prod.name}</h2>
-                  <p className="text-slate-600 mb-4">
-                    {prod.description.length > 200
-                      ? prod.description.slice(0, 200) + "..."
-                      : prod.description}
-                  </p>
+
                   <span className="text-teal-500 font-semibold">View Details →</span>
                 </div>
               </Link>
-
             ))}
+          </div>
+
+          {/* Pagination Controls */}
+          <div className="flex justify-center mt-8 gap-2">
+            <button
+              onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
+              disabled={currentPage === 1}
+              className="px-3 py-1 rounded bg-white shadow text-indigo-700 disabled:opacity-50"
+            >
+              Prev
+            </button>
+            {[...Array(totalPages)].map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setCurrentPage(i + 1)}
+                className={`px-3 py-1 rounded shadow ${currentPage === i + 1
+                  ? 'bg-indigo-600 text-white'
+                  : 'bg-white text-indigo-700'
+                  }`}
+              >
+                {i + 1}
+              </button>
+            ))}
+            <button
+              onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
+              disabled={currentPage === totalPages}
+              className="px-3 py-1 rounded bg-white shadow text-indigo-700 disabled:opacity-50"
+            >
+              Next
+            </button>
           </div>
         </section>
 
