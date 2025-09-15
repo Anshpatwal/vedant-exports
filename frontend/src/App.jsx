@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Helmet } from "react-helmet";
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -46,6 +47,31 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-indigo-50">
+
+      <Helmet>
+        <title>Vedant Exports | Garment & Textile Exporter from India</title>
+        <meta
+          name="description"
+          content="Vedant Exports is a trusted garment and fabric exporter from India, delivering high-quality apparel, fabrics, and embroidery to buyers in USA, EU, and Australia."
+        />
+        <meta
+          name="keywords"
+          content="garment exporter India, clothing supplier India, fabric exporter India, textile manufacturer India, wholesale garments USA EU Australia"
+        />
+        <meta name="author" content="Vedant Exports" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://vedant-exports.vercel.app" />
+
+        {/* Social Share (Open Graph & Twitter) */}
+        <meta property="og:title" content="Vedant Exports | Garment & Textile Exporter from India" />
+        <meta
+          property="og:description"
+          content="Exporting garments, fabrics, and embroidery from India to USA, EU, and Australia. Trusted quality, global reach."
+        />
+        <meta property="og:image" content="/banner2.jpg" />
+        <meta property="og:url" content="https://vedant-exports.vercel.app" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
       <Header />
 
       {/* Hero Section */}
@@ -60,12 +86,16 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 flex flex-col items-center text-center px-7 md:px-12 max-w-6xl space-y-8 mt-[-5vh]">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight tracking-tight">
-            Quality Textiles from <br className="hidden md:block" />
-            <span className="bg-gradient-to-r from-teal-400 to-cyan-300 bg-clip-text text-transparent">
-              India to Global Markets
+
+
+          <h1 className="text-3xl md:text-5xl font-bold text-white leading-snug tracking-tight drop-shadow-md">
+            Garment & Textile Exporter from India
+            <span className="block mt-2 bg-gradient-to-r from-teal-400 to-cyan-300 bg-clip-text text-transparent">
+              Vedant Exports
             </span>
           </h1>
+
+
           <p className="text-lg md:text-2xl text-gray-200 font-light leading-relaxed max-w-2xl">
             Vedant Exports delivers premium garments and fabrics worldwide with trust and reliability.
           </p>
@@ -109,6 +139,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+
 
       {/* Why Choose Us Section */}
       <section className="py-20 bg-indigo-50">
