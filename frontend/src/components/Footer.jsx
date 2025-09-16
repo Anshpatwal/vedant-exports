@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Linkedin, Facebook } from "lucide-react";
+import { MapPin, Phone, Mail, Linkedin, Facebook, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -127,10 +127,10 @@ export default function Footer() {
               <Linkedin className="w-6 h-6" />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/vedantexportss/"
               className="text-slate-400 hover:text-teal-400 transition-colors"
             >
-              <Facebook className="w-6 h-6" />
+              <Instagram className="w-6 h-6" />
             </a>
           </div>
           {/* Copyright */}
