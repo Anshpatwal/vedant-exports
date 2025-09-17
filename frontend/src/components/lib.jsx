@@ -1,32 +1,32 @@
 export const cordset = [
   {
     id: "cord-set-001",
-    name: "Classic Beige Cord Set",
-    images: ["/cord set/CD-1.png"]
+    name: "Halter Top Satin Skirt",
+    images: ["/cord set/CD-11.png"]
   },
   {
     id: "cord-set-002",
-    name: "Midnight Black Co-ord",
-    images: ["/cord set/CD-2.png"]
+    name: "Cutout Crop Skirt Set",
+    images: ["/cord set/CD-13.png"]
   },
   {
     id: "cord-set-003",
-    name: "Cream Co-ord Dress Set",
+    name: "Halter Top Satin Skirt",
     images: ["/cord set/CD-3.png"]
   },
   {
     id: "cord-set-004",
-    name: "Olive  Fusion Co-ord",
-    images: ["/cord set/CD-4.png"]
+    name: "Cropped Cardigan Mini Skirt",
+    images: ["/cord set/CD-22.png"]
   },
   {
     id: "cord-set-005",
-    name: "Peachy Pastel Cord Set",
+    name: "Cami Top Midi Skirt",
     images: ["/cord set/CD-5.png"]
   },
   {
     id: "cord-set-006",
-    name: "Rust Orange Statement Co-ord",
+    name: "Puff Sleeve Crop Top Midi Skirt",
     images: ["/cord set/CD-6.png"]
   },
   {
@@ -52,7 +52,7 @@ export const cordset = [
   {
     id: "cord-set-011",
     name: "Rose Pink Cord Set",
-    images: ["/cord set/CD-11.png"]
+    images: ["/cord set/CD-1.png"]
   },
   {
     id: "cord-set-012",
@@ -62,7 +62,7 @@ export const cordset = [
   {
     id: "cord-set-013",
     name: "Grey Minimalist Cord",
-    images: ["/cord set/CD-13.png"]
+    images: ["/cord set/CD-2.png"]
   },
   {
     id: "cord-set-014",
@@ -107,7 +107,7 @@ export const cordset = [
   {
     id: "cord-set-022",
     name: "Dusty Blue Co-ord",
-    images: ["/cord set/CD-22.png"]
+    images: ["/cord set/CD-4.png"]
   },
   {
     id: "cord-set-023",

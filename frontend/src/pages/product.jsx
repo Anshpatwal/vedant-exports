@@ -91,7 +91,7 @@ export default function ProductsPage() {
 
         {/* Products Grid */}
         <section className="px-6 pb-12">
-          <div className="max-w-7xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-10">
             {paginatedProducts.map((prod) => (
               <Link
                 key={prod.id}
