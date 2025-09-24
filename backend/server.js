@@ -21,8 +21,8 @@ app.post("/api/send-inquiry", async (req, res) => {
 
     // send email
     await resend.emails.send({
-      from: "Inquiry Form <onboarding@resend.dev>", // replace with your domain email
-      to: "anshpatwal2703@gmail.com", // your inbox
+      from: "Client Inquiry Form <onboarding@resend.dev>", // replace with your domain email
+      to: "vedantexportss@gmail.com", // your inbox
       subject: "New Website Inquiry",
       html: `
         <h2>New Inquiry from Website</h2>
@@ -45,7 +45,7 @@ app.post("/api/contact", async (req, res) => {
 
     await resend.emails.send({
       from: "Inquiry Form <onboarding@resend.dev>",
-      to: "anshpatwal2703@gmail.com",
+      to: "vedantexportss@gmail.com",
       subject: `New Inquiry: ${subject}`,
       html: `
         <h2>New Inquiry from Website</h2>
