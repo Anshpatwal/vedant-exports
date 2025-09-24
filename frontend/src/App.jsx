@@ -91,7 +91,7 @@ export default function Home() {
           <h1 className="text-3xl md:text-5xl font-bold text-white leading-snug tracking-tight drop-shadow-md">
             Garment & Textile Exporter from India
             <span className="block mt-2 bg-gradient-to-r from-teal-400 to-cyan-300 bg-clip-text text-transparent">
-             ~ Vedant Exports
+             - Vedant Exports
             </span>
           </h1>
 
@@ -101,7 +101,7 @@ export default function Home() {
           </p>
           <div className="pt-4">
             <a
-              href="/products"
+              href="/product"
               className="inline-block px-8 py-3 bg-teal-500 hover:bg-teal-600 text-white font-medium rounded-lg text-lg transition-all duration-300 shadow-md hover:shadow-xl"
             >
               Explore Our Products

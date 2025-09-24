@@ -1,8 +1,10 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Menu, X } from "lucide-react"; // hamburger icons
 
 export default function Header() {
+  const [mobileOpen, setMobileOpen] = useState(false);
+
   useEffect(() => {
-    // Inject Google Translate script
     const addGoogleTranslateScript = () => {
       const script = document.createElement("script");
       script.src =
@@ -11,7 +13,6 @@ export default function Header() {
       document.body.appendChild(script);
     };
 
-    // Define callback for Google Translate
     window.googleTranslateElementInit = function () {
       new window.google.translate.TranslateElement(
         {
@@ -21,16 +22,12 @@ export default function Header() {
         "google_translate_element"
       );
 
-      // Style the dropdown after Google adds it
       setTimeout(() => {
         const select = document.querySelector(
           "#google_translate_element select.goog-te-combo"
         );
         if (select) {
           select.style.appearance = "none";
-          select.style.display = "inline-block";
-          select.style.verticalAlign = "middle";
-          select.style.whiteSpace = "nowrap";
           select.style.height = "30px";
           select.style.paddingRight = "32px";
           select.style.backgroundImage =
@@ -42,7 +39,6 @@ export default function Header() {
       }, 1500);
     };
 
-    // Load script
     addGoogleTranslateScript();
   }, []);
 
@@ -60,54 +56,48 @@ export default function Header() {
           />
         </a>
 
-        {/* Navigation */}
-        <nav className="flex items-center gap-8">
-          <div className="hidden md:flex items-center gap-8 text-black font-[700]">
-            <a
-              href="/"
-              className="hover:text-indigo-600 transition-colors duration-300 relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-indigo-600 hover:after:w-full after:transition-all"
-            >
-              Home
-            </a>
-            <a
-              href="/about"
-              className="hover:text-indigo-600 transition-colors duration-300 relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-indigo-600 hover:after:w-full after:transition-all"
-            >
-              About
-            </a>
-            <a
-              href="/product"
-              className="hover:text-indigo-600 transition-colors duration-300 relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-indigo-600 hover:after:w-full after:transition-all"
-            >
-              Products
-            </a>
-            <a
-              href="/contactus"
-              className="hover:text-indigo-600 transition-colors duration-300 relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-indigo-600 hover:after:w-full after:transition-all"
-            >
-              Contact Us
-            </a>
-            <a
-              href="/certificates"
-              className="hover:text-indigo-600 transition-colors duration-300 relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-indigo-600 hover:after:w-full after:transition-all"
-            >
-              Certificates
-            </a>
-          </div>
-
-          {/* Google Translate Dropdown */}
-          <div
-            id="google_translate_wrapper"
-            className="flex items-center gap-1 whitespace-nowrap"
-            aria-label="Select Language"
-          >
-            <div
-              id="google_translate_element"
-              className="transform scale-90 origin-top-right flex items-center"
-            />
-          </div>
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex items-center gap-8 text-black font-[700]">
+          <a href="/" className="hover:text-indigo-600 transition">Home</a>
+          <a href="/about" className="hover:text-indigo-600 transition">About</a>
+          <a href="/product" className="hover:text-indigo-600 transition">Products</a>
+          <a href="/contactus" className="hover:text-indigo-600 transition">Contact Us</a>
+          <a href="/certificates" className="hover:text-indigo-600 transition">Certificates</a>
         </nav>
+
+        {/* Google Translate */}
+        <div
+          id="google_translate_wrapper"
+          className="hidden md:flex items-center gap-1 whitespace-nowrap"
+        >
+          <div
+            id="google_translate_element"
+            className="transform scale-90 origin-top-right flex items-center"
+          />
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden p-2 text-gray-700"
+          onClick={() => setMobileOpen(!mobileOpen)}
+        >
+          {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </div>
+
+      {/* Mobile Dropdown Menu */}
+      {mobileOpen && (
+        <div className="md:hidden bg-white border-t border-gray-200 px-6 py-4 flex flex-col gap-4 font-[700]">
+          <a href="/" className="hover:text-indigo-600">Home</a>
+          <a href="/about" className="hover:text-indigo-600">About</a>
+          <a href="/product" className="hover:text-indigo-600">Products</a>
+          <a href="/contactus" className="hover:text-indigo-600">Contact Us</a>
+          <a href="/certificates" className="hover:text-indigo-600">Certificates</a>
+
+          {/* Translate Dropdown on Mobile */}
+          <div id="google_translate_element" className="mt-2" />
+        </div>
+      )}
     </header>
   );
 }

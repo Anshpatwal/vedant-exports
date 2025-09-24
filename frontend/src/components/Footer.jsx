@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Linkedin, Facebook, Instagram } from "lucide-react";
+import { MapPin, Phone, Mail, Linkedin, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -51,7 +51,7 @@ export default function Footer() {
           <ul className="space-y-3">
             <li>
               <a
-                href="/products"
+                href="/product"
                 className="text-slate-400 hover:text-teal-400 transition-colors text-sm"
               >
                 Women Cord Set
@@ -59,7 +59,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="/products"
+                href="/product"
                 className="text-slate-400 hover:text-teal-400 transition-colors text-sm"
               >
                 Dresses
@@ -67,7 +67,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="/products"
+                href="/product"
                 className="text-slate-400 hover:text-teal-400 transition-colors text-sm"
               >
                 Women Tops
@@ -75,7 +75,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="/products"
+                href="/product"
                 className="text-slate-400 hover:text-teal-400 transition-colors text-sm"
               >
                 Embrodiery
@@ -99,7 +99,7 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <Phone className="w-5 h-5 text-teal-400" />
               <a href="tel:+918799473680" className="hover:text-teal-400">
-                +91 8799473680
+                +91 8799473680 / +91 9904455699
               </a>
             </div>
             <div className="flex items-center gap-3">
