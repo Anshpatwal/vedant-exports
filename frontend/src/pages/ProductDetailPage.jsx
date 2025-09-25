@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import Slider from "react-slick";
-import { cordset, dress, tops } from '../components/lib';
+import { cordset, dress, tops,embroidery } from '../components/lib';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -8,7 +8,7 @@ export default function ProductDetailPage() {
   const { id } = useParams();
 
   // combine all products
-  const allProducts = [...dress, ...cordset, ...tops];
+  const allProducts = [...dress, ...cordset, ...tops,...embroidery];
   const product = allProducts.find((p) => p.id === id);
 
   if (!product) {

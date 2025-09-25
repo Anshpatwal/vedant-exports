@@ -15,7 +15,7 @@ export default function Footer() {
           </p>
           <div className="flex items-center space-x-3">
             <img
-              src="/Make_in_India.png"
+              src="/Make_In_India.png"
               alt="Made in India"
               width={36}
               height={36}

@@ -309,6 +309,255 @@ export const tops = [
   }
 ];
 
+export const embroidery = [
+  {
+    id: "design-001",
+    name: "Floral Elegance",
+    images: ["/embroidery/e1.jpg"]
+  },
+  {
+    id: "design-002",
+    name: "Royal Peacock",
+    images: ["/embroidery/e2.jpg"]
+  },
+  {
+    id: "design-003",
+    name: "Golden Bloom",
+    images: ["/embroidery/e3.jpg"]
+  },
+  {
+    id: "design-004",
+    name: "Mystic Mandala",
+    images: ["/embroidery/e4.jpeg"]
+  },
+  {
+    id: "design-005",
+    name: "Vintage Rose",
+    images: ["/embroidery/e5.jpg"]
+  },
+  {
+    id: "design-006",
+    name: "Elegant Paisley",
+    images: ["/embroidery/e6.jpg"]
+  },
+  {
+    id: "design-007",
+    name: "Lotus Grace",
+    images: ["/embroidery/e7.jpeg"]
+  },
+  {
+    id: "design-008",
+    name: "Royal Garden",
+    images: ["/embroidery/e8.jpeg"]
+  },
+  {
+    id: "design-009",
+    name: "Classic Vines",
+    images: ["/embroidery/e9.jpeg"]
+  },
+  {
+    id: "design-010",
+    name: "Diamond Weave",
+    images: ["/embroidery/e10.jpeg"]
+  },
+  {
+    id: "design-011",
+    name: "Sunflower Charm",
+    images: ["/embroidery/e11.jpeg"]
+  },
+  {
+    id: "design-012",
+    name: "Crystal Leaves",
+    images: ["/embroidery/e12.jpeg"]
+  },
+  {
+    id: "design-013",
+    name: "Ornate Blossoms",
+    images: ["/embroidery/e13.jpeg"]
+  },
+  {
+    id: "design-014",
+    name: "Royal Emblem",
+    images: ["/embroidery/e14.jpeg"]
+  },
+  {
+    id: "design-015",
+    name: "Petal Swirls",
+    images: ["/embroidery/e15.jpg"]
+  },
+  {
+    id: "design-016",
+    name: "Golden Waves",
+    images: ["/embroidery/e16.jpg"]
+  },
+  {
+    id: "design-017",
+    name: "Elegant Mesh",
+    images: ["/embroidery/e17.jpg"]
+  },
+  {
+    id: "design-018",
+    name: "Butterfly Dreams",
+    images: ["/embroidery/e18.jpg"]
+  },
+  {
+    id: "design-019",
+    name: "Regal Threads",
+    images: ["/embroidery/e19.jpg"]
+  },
+  {
+    id: "design-020",
+    name: "Twilight Vine",
+    images: ["/embroidery/e20.jpg"]
+  },
+  {
+    id: "design-021",
+    name: "Rose Gold Glory",
+    images: ["/embroidery/e21.jpg"]
+  },
+  {
+    id: "design-022",
+    name: "Whispering Feathers",
+    images: ["/embroidery/e22.jpg"]
+  },
+  {
+    id: "design-023",
+    name: "Luxe Diamonds",
+    images: ["/embroidery/e23.jpg"]
+  },
+  {
+    id: "design-024",
+    name: "Delicate Waves",
+    images: ["/embroidery/e24.jpg"]
+  },
+  {
+    id: "design-025",
+    name: "Ivory Petals",
+    images: ["/embroidery/e25.jpg"]
+  },
+  {
+    id: "design-026",
+    name: "Shimmer Leaves",
+    images: ["/embroidery/e26.jpg"]
+  },
+  {
+    id: "design-027",
+    name: "Velvet Charm",
+    images: ["/embroidery/e27.jpg"]
+  },
+  {
+    id: "design-028",
+    name: "Sapphire Bloom",
+    images: ["/embroidery/e28.jpg"]
+  },
+  {
+    id: "design-029",
+    name: "Pearl Paisley",
+    images: ["/embroidery/e29.jpg"]
+  },
+  {
+    id: "design-030",
+    name: "Majestic Mandala",
+    images: ["/embroidery/e30.jpg"]
+  },
+  {
+    id: "design-031",
+    name: "Emerald Petals",
+    images: ["/embroidery/e31.jpg"]
+  },
+  {
+    id: "design-032",
+    name: "Crimson Lotus",
+    images: ["/embroidery/e32.jpg"]
+  },
+  {
+    id: "design-033",
+    name: "Golden Phoenix",
+    images: ["/embroidery/e33.jpg"]
+  },
+  {
+    id: "design-034",
+    name: "Ocean Breeze",
+    images: ["/embroidery/e34.jpg"]
+  },
+  {
+    id: "design-035",
+    name: "Silken Swirls",
+    images: ["/embroidery/e35.jpeg"]
+  },
+  {
+    id: "design-036",
+    name: "Orchid Bloom",
+    images: ["/embroidery/e36.jpeg"]
+  },
+  {
+    id: "design-037",
+    name: "Mystic Feather",
+    images: ["/embroidery/e37.jpeg"]
+  },
+  {
+    id: "design-038",
+    name: "Amber Glow",
+    images: ["/embroidery/e38.jpeg"]
+  },
+  {
+    id: "design-039",
+    name: "Royal Lotus",
+    images: ["/embroidery/e39.jpeg"]
+  },
+  {
+    id: "design-040",
+    name: "Gilded Rose",
+    images: ["/embroidery/e40.jpeg"]
+  },
+  {
+    id: "design-041",
+    name: "Ivory Lace",
+    images: ["/embroidery/e41.jpeg"]
+  },
+  {
+    id: "design-042",
+    name: "Mystic Sun",
+    images: ["/embroidery/e42.jpeg"]
+  },
+  {
+    id: "design-043",
+    name: "Crystal Bloom",
+    images: ["/embroidery/e43.jpeg"]
+  },
+  {
+    id: "design-044",
+    name: "Velvet Petals",
+    images: ["/embroidery/e44.jpeg"]
+  },
+  {
+    id: "design-045",
+    name: "Twilight Rose",
+    images: ["/embroidery/e45.jpeg"]
+  },
+  {
+    id: "design-046",
+    name: "Amber Feather",
+    images: ["/embroidery/e46.jpeg"]
+  },
+  {
+    id: "design-047",
+    name: "Silver Charm",
+    images: ["/embroidery/e47.jpeg"]
+  },
+  {
+    id: "design-048",
+    name: "Golden Aura",
+    images: ["/embroidery/e48.jpeg"]
+  },
+  {
+    id: "design-049",
+    name: "Jade Mandala",
+    images: ["/embroidery/e49.jpeg"]
+  },
+];
+
+
 
 export const dress = [
   {

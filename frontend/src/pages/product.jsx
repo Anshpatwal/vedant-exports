@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { cordset, dress, tops } from '../components/lib';
+import { cordset, dress, tops, embroidery } from '../components/lib';
 import Header from '../components/Header';
 import { Link } from "react-router-dom";
 import Footer from '../components/Footer';
@@ -18,6 +18,7 @@ export default function ProductsPage() {
       cordset: cordset,
       dress: dress,
       tops: tops,
+      embroidery: embroidery,
     },
   };
 
