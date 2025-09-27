@@ -150,7 +150,7 @@ export default function ProductsPage() {
               Contact us today for bulk orders, tailored specs, and pricing!
             </p>
             <a
-              href="/contact"
+              href="/contactus"
               className="inline-block bg-white text-indigo-700 px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all"
             >
               Get in Touch

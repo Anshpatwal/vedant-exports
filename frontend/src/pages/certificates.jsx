@@ -57,7 +57,7 @@ export default function CertificatesPage() {
               Contact us and we’ll provide authenticated copies of any certificate you require.
             </p>
             <a
-              href="/contact"
+              href="/contactus"
               className="inline-block bg-white text-indigo-700 px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all"
             >
               Get in Touch

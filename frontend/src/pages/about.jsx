@@ -82,7 +82,7 @@ export default function About() {
           Let’s grow together. Reach out to get customized quotes for your export needs.
         </p>
         <a
-          href="/contact"
+          href="/contactus"
           className="inline-block bg-gradient-to-r from-teal-400 to-cyan-400 px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all"
         >
           Contact Us
