@@ -60,7 +60,7 @@ export default function Home() {
         />
         <meta name="author" content="Vedant Exports" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://vedant-exports.vercel.app" />
+        <link rel="canonical" href="https://vedant-exports.com" />
 
         {/* Social Share (Open Graph & Twitter) */}
         <meta property="og:title" content="Vedant Exports | Garment & Textile Exporter from India" />
@@ -69,7 +69,7 @@ export default function Home() {
           content="Exporting garments, fabrics, and embroidery from India to USA, EU, and Australia. Trusted quality, global reach."
         />
         <meta property="og:image" content="/banner2.jpg" />
-        <meta property="og:url" content="https://vedant-exports.vercel.app" />
+        <meta property="og:url" content="https://vedant-exports.com" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
       <Header />
@@ -78,7 +78,7 @@ export default function Home() {
       <section className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-black">
         <div className="absolute inset-0 z-0">
           <img
-            src="/banner2.jpg"
+            src="/banner-1.jpg"
             alt="Vedant Export Operations"
             className="object-cover w-full h-full"
           />

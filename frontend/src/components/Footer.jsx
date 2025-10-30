@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Linkedin, Instagram } from "lucide-react";
+import { MapPin, Phone, Mail, Linkedin, Instagram, Facebook } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -34,7 +34,7 @@ export default function Footer() {
               (link, i) => (
                 <li key={i}>
                   <a
-                    href="#"
+                    href="/about"
                     className="text-slate-400 hover:text-teal-400 transition-colors text-sm"
                   >
                     {link}
@@ -131,6 +131,12 @@ export default function Footer() {
               className="text-slate-400 hover:text-teal-400 transition-colors"
             >
               <Instagram className="w-6 h-6" />
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61583184145551"
+              className="text-slate-400 hover:text-teal-400 transition-colors"
+            >
+              <Facebook className="w-6 h-6" />
             </a>
           </div>
           {/* Copyright */}
