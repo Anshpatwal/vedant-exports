@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Linkedin, Instagram, Facebook } from "lucide-react";
+import { MapPin, Phone, Mail, Linkedin, Instagram, Facebook, MessageCircleIcon } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -138,6 +138,16 @@ export default function Footer() {
             >
               <Facebook className="w-6 h-6" />
             </a>
+            <a
+              href="https://wa.me/918799473680?text=Hello%20I%20am%20interested%20in%20your%20products!"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-400 hover:text-teal-400 transition-colors"
+            >
+              <MessageCircleIcon className="w-6 h-6" />
+            </a>
+
+
           </div>
           {/* Copyright */}
           <div className="text-center md:text-left">
