@@ -732,11 +732,11 @@ export const certificates = [
   },
 
   {
-    id: 'fair-trade',
-    title: 'Fair Trade Certified',
-    issuer: 'Fair Trade International',
-    date: '2023-08-10',
-    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d',
-    description: 'Ensuring ethical sourcing and fair labor practices in agricultural exports.'
+    id: 'iec-certificate',
+    title: 'Importer-Exporter Code (IEC)',
+    issuer: 'Directorate General of Foreign Trade (DGFT), Government of India',
+    date: '2025-11-12',
+    image: '/iec.jpg',
+    description: 'The IEC (HLXPP1138E) is issued to VEDANT EXPORTS, a proprietorship firm registered in Surat, Gujarat. This certificate authorizes the firm to legally conduct import and export activities under Indian foreign trade regulations. The document includes the PAN-based IEC number, registered business address, and signatory details as per DGFT records.'
   }
 ];
