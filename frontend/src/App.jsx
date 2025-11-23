@@ -49,7 +49,7 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-indigo-50">
 
       <Helmet>
-        <title>Vedant Exports | Garment & Textile Exporter from India</title>
+        <title>Vedant Exports | Garments & Fabrics Exporter from India</title>
         <meta
           name="description"
           content="Vedant Exports is a trusted garment and fabric exporter from India, delivering high-quality apparel, fabrics, and embroidery to buyers in USA, EU, and Australia."
@@ -89,7 +89,7 @@ export default function Home() {
 
 
           <h1 className="text-3xl md:text-5xl font-bold text-white leading-snug tracking-tight drop-shadow-md">
-            Garment & Textile Exporter from India
+            Garments & Fabrics Exporter from India
             <span className="block mt-2 bg-gradient-to-r from-teal-400 to-cyan-300 bg-clip-text text-transparent">
              - Vedant Exports
             </span>

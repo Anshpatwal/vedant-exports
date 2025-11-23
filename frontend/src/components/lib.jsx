@@ -557,8 +557,6 @@ export const embroidery = [
   },
 ];
 
-
-
 export const dress = [
   {
     id: "dress-001",
