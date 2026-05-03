@@ -710,6 +710,109 @@ export const dress = [
   // }
 ];
 
+export const fabrics = [
+  {
+    id: "fabric-001",
+    name: "Cotton Plain Fabric",
+    images: ["https://images.unsplash.com/photo-1582719478250-c89cae4dc85b"]
+  },
+  {
+    id: "fabric-002",
+    name: "Polyester Twill Fabric",
+    images: ["https://images.unsplash.com/photo-1600185365483-26d7a4cc7519"]
+  },
+  {
+    id: "fabric-003",
+    name: "Rayon Printed Fabric",
+    images: ["https://images.unsplash.com/photo-1618354691373-d851c5c3a990"]
+  },
+  {
+    id: "fabric-004",
+    name: "Silk Satin Fabric",
+    images: ["https://images.unsplash.com/photo-1593032465175-481ac7f401a0"]
+  },
+  {
+    id: "fabric-005",
+    name: "Linen Slub Fabric",
+    images: ["https://images.unsplash.com/photo-1598300056393-4aac492f4344"]
+  },
+  {
+    id: "fabric-006",
+    name: "Chiffon Fabric",
+    images: ["https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf"]
+  },
+  {
+    id: "fabric-007",
+    name: "Georgette Fabric",
+    images: ["https://images.unsplash.com/photo-1603252109303-2751441dd157"]
+  },
+  {
+    id: "fabric-008",
+    name: "Denim Fabric",
+    images: ["https://images.unsplash.com/photo-1541099649105-f69ad21f3246"]
+  },
+  {
+    id: "fabric-009",
+    name: "Velvet Fabric",
+    images: ["https://images.unsplash.com/photo-1616628182506-9f06a14c7a8e"]
+  },
+  {
+    id: "fabric-010",
+    name: "Poplin Cotton Fabric",
+    images: ["https://images.unsplash.com/photo-1620799140408-edc6dcb6d633"]
+  },
+  {
+    id: "fabric-011",
+    name: "Twill Cotton Fabric",
+    images: ["https://images.unsplash.com/photo-1589465885857-44edb59bbff2"]
+  },
+  {
+    id: "fabric-012",
+    name: "Organza Fabric",
+    images: ["https://images.unsplash.com/photo-1604152135912-04a022e23696"]
+  },
+  {
+    id: "fabric-013",
+    name: "Crepe Fabric",
+    images: ["https://images.unsplash.com/photo-1618220179428-22790b461013"]
+  },
+  {
+    id: "fabric-014",
+    name: "Viscose Fabric",
+    images: ["https://images.unsplash.com/photo-1610484826967-09c5723c6ba8"]
+  },
+  {
+    id: "fabric-015",
+    name: "Jacquard Fabric",
+    images: ["https://images.unsplash.com/photo-1594041680534-e8c8cdebd659"]
+  },
+  {
+    id: "fabric-016",
+    name: "Canvas Fabric",
+    images: ["https://images.unsplash.com/photo-1520975916090-3105956dac38"]
+  },
+  {
+    id: "fabric-017",
+    name: "Knitted Jersey Fabric",
+    images: ["https://images.unsplash.com/photo-1622445275463-afa2e24fbf03"]
+  },
+  {
+    id: "fabric-018",
+    name: "Wool Blend Fabric",
+    images: ["https://images.unsplash.com/photo-1604079628040-94301bb21b91"]
+  },
+  {
+    id: "fabric-019",
+    name: "Poly Cotton Fabric",
+    images: ["https://images.unsplash.com/photo-1589310243389-96a5483213a8"]
+  },
+  {
+    id: "fabric-020",
+    name: "Taffeta Fabric",
+    images: ["https://images.unsplash.com/photo-1618221195710-dd6b41faaea6"]
+  }
+];
+
 export const certificates = [
   {
     id: 'msme-certificate',
