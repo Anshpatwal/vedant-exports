@@ -711,106 +711,52 @@ export const dress = [
 ];
 
 export const fabrics = [
-  {
-    id: "fabric-001",
-    name: "Cotton Plain Fabric",
-    images: ["https://images.unsplash.com/photo-1582719478250-c89cae4dc85b"]
-  },
-  {
-    id: "fabric-002",
-    name: "Polyester Twill Fabric",
-    images: ["https://images.unsplash.com/photo-1600185365483-26d7a4cc7519"]
-  },
-  {
-    id: "fabric-003",
-    name: "Rayon Printed Fabric",
-    images: ["https://images.unsplash.com/photo-1618354691373-d851c5c3a990"]
-  },
-  {
-    id: "fabric-004",
-    name: "Silk Satin Fabric",
-    images: ["https://images.unsplash.com/photo-1593032465175-481ac7f401a0"]
-  },
-  {
-    id: "fabric-005",
-    name: "Linen Slub Fabric",
-    images: ["https://images.unsplash.com/photo-1598300056393-4aac492f4344"]
-  },
-  {
-    id: "fabric-006",
-    name: "Chiffon Fabric",
-    images: ["https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf"]
-  },
-  {
-    id: "fabric-007",
-    name: "Georgette Fabric",
-    images: ["https://images.unsplash.com/photo-1603252109303-2751441dd157"]
-  },
-  {
-    id: "fabric-008",
-    name: "Denim Fabric",
-    images: ["https://images.unsplash.com/photo-1541099649105-f69ad21f3246"]
-  },
-  {
-    id: "fabric-009",
-    name: "Velvet Fabric",
-    images: ["https://images.unsplash.com/photo-1616628182506-9f06a14c7a8e"]
-  },
-  {
-    id: "fabric-010",
-    name: "Poplin Cotton Fabric",
-    images: ["https://images.unsplash.com/photo-1620799140408-edc6dcb6d633"]
-  },
-  {
-    id: "fabric-011",
-    name: "Twill Cotton Fabric",
-    images: ["https://images.unsplash.com/photo-1589465885857-44edb59bbff2"]
-  },
-  {
-    id: "fabric-012",
-    name: "Organza Fabric",
-    images: ["https://images.unsplash.com/photo-1604152135912-04a022e23696"]
-  },
-  {
-    id: "fabric-013",
-    name: "Crepe Fabric",
-    images: ["https://images.unsplash.com/photo-1618220179428-22790b461013"]
-  },
-  {
-    id: "fabric-014",
-    name: "Viscose Fabric",
-    images: ["https://images.unsplash.com/photo-1610484826967-09c5723c6ba8"]
-  },
-  {
-    id: "fabric-015",
-    name: "Jacquard Fabric",
-    images: ["https://images.unsplash.com/photo-1594041680534-e8c8cdebd659"]
-  },
-  {
-    id: "fabric-016",
-    name: "Canvas Fabric",
-    images: ["https://images.unsplash.com/photo-1520975916090-3105956dac38"]
-  },
-  {
-    id: "fabric-017",
-    name: "Knitted Jersey Fabric",
-    images: ["https://images.unsplash.com/photo-1622445275463-afa2e24fbf03"]
-  },
-  {
-    id: "fabric-018",
-    name: "Wool Blend Fabric",
-    images: ["https://images.unsplash.com/photo-1604079628040-94301bb21b91"]
-  },
-  {
-    id: "fabric-019",
-    name: "Poly Cotton Fabric",
-    images: ["https://images.unsplash.com/photo-1589310243389-96a5483213a8"]
-  },
-  {
-    id: "fabric-020",
-    name: "Taffeta Fabric",
-    images: ["https://images.unsplash.com/photo-1618221195710-dd6b41faaea6"]
-  }
+  { id: "fabric-001", name: "Malta 237", images: ["/fabrics/malta-237.png"] },
+  { id: "fabric-002", name: "Malta 238", images: ["/fabrics/malta-238.png"] },
+  { id: "fabric-003", name: "Mircrotek 23", images: ["/fabrics/mircrotek-23.png"] },
+  { id: "fabric-004", name: "Moonstar", images: ["/fabrics/moonstar.png"] },
+  { id: "fabric-005", name: "Olympic 2", images: ["/fabrics/Olympic-2.png"] },
+  { id: "fabric-006", name: "Olympic 3", images: ["/fabrics/Olympic-3.png"] },
+  { id: "fabric-007", name: "Platinum", images: ["/fabrics/Platinum.png"] },
+  { id: "fabric-008", name: "Richman 61", images: ["/fabrics/richman-61.png"] },
+  { id: "fabric-009", name: "Roylex 1", images: ["/fabrics/Roylex-1.png"] },
+  { id: "fabric-010", name: "Russian 20", images: ["/fabrics/russian-20.png"] },
+
+  { id: "fabric-011", name: "Russian 22", images: ["/fabrics/russian-22.png"] },
+  { id: "fabric-012", name: "Smart India 2", images: ["/fabrics/smartindia2.png"] },
+  { id: "fabric-013", name: "Soft 142", images: ["/fabrics/soft-142.png"] },
+  { id: "fabric-014", name: "Star 3", images: ["/fabrics/star-3.png"] },
+  { id: "fabric-015", name: "Star 9", images: ["/fabrics/star-9.png"] },
+  { id: "fabric-016", name: "Star 10", images: ["/fabrics/star-10.png"] },
+  { id: "fabric-017", name: "Star 11", images: ["/fabrics/star-11.png"] },
+  { id: "fabric-018", name: "Super Delux 1", images: ["/fabrics/superdelux-1.png"] },
+  { id: "fabric-019", name: "Turkey 46", images: ["/fabrics/turkey-46.png"] },
+  { id: "fabric-020", name: "Turkey 55", images: ["/fabrics/turkey-55.png"] },
+
+  { id: "fabric-021", name: "Turkey 140", images: ["/fabrics/turkey-140.png"] },
+  { id: "fabric-022", name: "Turkey 146", images: ["/fabrics/turkey-146.png"] },
+  { id: "fabric-023", name: "Volo 2", images: ["/fabrics/volo-2.png"] },
+  { id: "fabric-024", name: "Volo 4", images: ["/fabrics/volo-4.png"] },
+  { id: "fabric-025", name: "Volo 5", images: ["/fabrics/volo-5.png"] },
+  { id: "fabric-026", name: "AS 2665", images: ["/fabrics/as-2665.png"] },
+  { id: "fabric-027", name: "AS 2737", images: ["/fabrics/as2737.png"] },
+  { id: "fabric-028", name: "AS 2764", images: ["/fabrics/as-2764.png"] },
+  { id: "fabric-029", name: "AS 3055", images: ["/fabrics/as-3055.png"] },
+  { id: "fabric-030", name: "AS 81915", images: ["/fabrics/as81915.png"] },
+
+  { id: "fabric-031", name: "AS 81917", images: ["/fabrics/as81917.png"] },
+  { id: "fabric-032", name: "Century", images: ["/fabrics/century.png"] },
+  { id: "fabric-033", name: "Country Club", images: ["/fabrics/Countryclub.png"] },
+  { id: "fabric-034", name: "Freedom 1", images: ["/fabrics/freedom-1.png"] },
+  { id: "fabric-035", name: "Galaxy", images: ["/fabrics/Galaxy.png"] },
+  { id: "fabric-036", name: "King Slub", images: ["/fabrics/king slub.png"] },
+  { id: "fabric-037", name: "Malta 129", images: ["/fabrics/malta-129.png"] },
+  { id: "fabric-038", name: "Malta 181", images: ["/fabrics/malta-181.png"] },
+  { id: "fabric-039", name: "Malta 226", images: ["/fabrics/malta-226.png"] },
+  { id: "fabric-040", name: "Malta 228", images: ["/fabrics/malta228.png"] },
+
+  { id: "fabric-041", name: "Malta 230", images: ["/fabrics/malta-230.png"] },
+  { id: "fabric-042", name: "Malta 234", images: ["/fabrics/malta-234.png"] }
 ];
 
 export const certificates = [

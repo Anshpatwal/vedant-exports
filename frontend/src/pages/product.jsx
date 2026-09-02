@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { cordset, dress, tops, embroidery ,fabrics } from '../components/lib';
+import { cordset, dress, tops, embroidery, fabrics } from '../components/lib';
 import Header from '../components/Header';
 import { Link } from "react-router-dom";
 import Footer from '../components/Footer';
@@ -19,7 +19,7 @@ export default function ProductsPage() {
       dress: dress,
       tops: tops,
       embroidery: embroidery,
-      fabrics:fabrics,
+      fabrics: fabrics,
     },
   };
 
@@ -100,7 +100,14 @@ export default function ProductsPage() {
                 to={`/products/${prod.id}`}
                 className="block bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden"
               >
-                <img src={prod.images[0]} alt={prod.name} className="object-cover h-150 w-full" />
+                <img
+                  src={prod.images[0]}
+                  alt={prod.name}
+                  className={`w-full object-cover ${activeSubCategory === "fabrics"
+                      ? "h-50 md:h-56 aspect-[16/9]"
+                      : "h-80 aspect-[3/4]"
+                    }`}
+                />
                 <div className="p-6">
                   <h2 className="text-xl font-bold text-slate-900 mb-2">{prod.name}</h2>
 

@@ -91,7 +91,9 @@ export default function Footer() {
             <div className="flex items-start gap-3">
               <MapPin className="w-5 h-5 text-teal-400" />
               <p>
-                28/30, Hari Om Industry,
+                Plot No: 16 Avishkar Texpa 2,
+                <br />
+                near Gondal Masala, Kodadra
                 <br />
                 Surat, Gujarat
               </p>

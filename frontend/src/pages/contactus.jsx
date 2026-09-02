@@ -16,28 +16,36 @@ export default function ContactPage() {
     };
 
     const handleSubmit = async (e) => {
-      e.preventDefault();
-      try {
-        const res = await fetch("https://vedant-exports.com/api/contact", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        });
+  e.preventDefault();
 
-        if (res.ok) {
-          alert("Inquiry sent successfully!");
-          setFormData({ name: "", email: "", subject: "", message: "" });
-          console.log(formData);
-        } else {
-          alert("Failed to send inquiry");
-        }
-      } catch (err) {
-        console.error("Error:", err);
-        alert("An error occurred. Please try again later.");
-      }
-    };
+  try {
+    const res = await fetch("https://www.vedant-exports.com/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await res.json();
+
+    if (res.ok) {
+      alert("Inquiry sent successfully!");
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+      console.log(data);
+    } else {
+      alert(data.message || "Failed to send inquiry");
+    }
+  } catch (err) {
+    console.error("Error:", err);
+    alert("An error occurred. Please try again later.");
+  }
+};
 
   return (
     <>
